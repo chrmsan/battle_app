@@ -10,7 +10,7 @@ A two player game built with Sinatra from Makers Academy Week 3
 ##User Stories
 
 ```
-- [x] As two Players,
+As two Players,
 So we can play a personalised game of Battle,
 We want to Start a fight by entering our Names and seeing them
 

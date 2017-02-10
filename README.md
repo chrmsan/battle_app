@@ -1,13 +1,21 @@
-#Battle_app
+#README
+
+##Battle_app
 
 A two player game built with Sinatra from Makers Academy Week 3
 
-##Keywords
+### Installation Instructions
+
+- Clone this repo
+- hit *bundle* in your command line - you'll need to have [ruby](https://www.ruby-lang.org/en/documentation/installation/) installed beforehand
+- hit *rackup* in your command line and go to localhost:9292 in your browser
+
+###Keywords
 - Ruby
 - Sinatra
 - TDD(RSpec)
 
-##User Stories
+###User Stories
 
 ```
 As two Players,

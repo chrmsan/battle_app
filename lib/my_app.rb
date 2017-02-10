@@ -9,8 +9,8 @@ class MyApp < Sinatra::Base
   end
 
   post '/names' do
-    sessions[:player_1] = params[:player_1]
-    sessions[:player_2] = params[:player_2]
+    session[:player_1] = params[:player_1]
+    session[:player_2] = params[:player_2]
     erb :play
   end
 

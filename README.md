@@ -7,8 +7,8 @@ A two player game built with Sinatra from Makers Academy Week 3
 ### Installation Instructions
 
 - Clone this repo
-- Enter *bundle* in your command line - you'll need to have [ruby](https://www.ruby-lang.org/en/documentation/installation/) installed beforehand
-- Enter *rackup* in your command line and go to localhost:9292 in your browser
+- Enter `bundle` in your command line - you'll need to have [ruby](https://www.ruby-lang.org/en/documentation/installation/) installed beforehand
+- Enter `rackup` in your command line and go to localhost:9292 in your browser
 
 ###Keywords
 - Ruby

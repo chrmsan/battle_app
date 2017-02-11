@@ -1,9 +1,5 @@
 <h1>Player 1: <%=@player1%> (100HP) VS Player 2: <%=@player2%> (100HP) </h1>
 
-<div>	
-	<button type="button">Player 1 Attack!</button>
-</div>
-
-<p>
-	Player 1 has attacked Player 2
-</p>
+<form action="/attack">
+	<input type="submit" value="Attack!">
+</form>

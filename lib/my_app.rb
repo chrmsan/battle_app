@@ -20,10 +20,5 @@ class MyApp < Sinatra::Base
     erb :play
   end
 
-  get '/test' do
-    @poop = session[:player_1]
-    erb :poop
-  end
-
   run! if app_file == $0
 end

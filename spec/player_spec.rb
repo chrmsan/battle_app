@@ -22,4 +22,10 @@ describe Player do
 			pikachu.attack(bulbasaur)
 		end
 	end
+
+	describe '#receive_damage' do
+		it 'reduces player hitpoints by 10HP' do
+			expect { pikachu.receive_damage }.to change { pikachu.hitpoints }.by(-(described_class::DAMAGE_HP))
+		end
+	end
 end

@@ -1,6 +1,7 @@
 class Player
 
 	DEF_HP = 100
+	DAMAGE_HP = 10
 
 	attr_reader :name, :hitpoints
 	
@@ -14,7 +15,7 @@ class Player
 	end
 
 	def receive_damage
-		
+		@hitpoints -= DAMAGE_HP
 	end
 end
 

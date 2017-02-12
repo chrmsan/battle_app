@@ -9,4 +9,8 @@ describe Player do
 		end
 	end
 
+	describe '#hit_points' do
+		it 'returns the players HP' do
+			expect(pikachu.hitpoints).to eq(described_class::DEFAULT_HP)
+		end
 end

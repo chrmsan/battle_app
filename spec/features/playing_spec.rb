@@ -6,4 +6,11 @@ feature 'game play' do
 		click_button 'Attack!'
 		expect(page).to have_content('Johnny Bravo has attacked Jason Bourne')
 	end
+
+	scenario 'Player 2 lose 10HP when attacked' do
+		sign_in_and_play
+		click_button 'Attack!'
+		expect(page).not_to have_content('Jason Bourne (100HP)')
+		expect(page).to have_content('Jason Bourne (90HP)')
+	end
 end

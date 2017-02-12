@@ -9,6 +9,12 @@ class Player
 		@hitpoints = hitpoints
 	end
 	
+	def attack(opponent)
+		opponent.receive_damage
+	end
 
+	def receive_damage
+		
+	end
 end
 

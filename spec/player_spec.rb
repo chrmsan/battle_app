@@ -16,12 +16,6 @@ describe Player do
 		end
 	end
 
-	describe '#attack' do
-		it 'inflict damage to player who is being attacked' do
-			expect(bulbasaur).to receive(:receive_damage)
-			pikachu.attack(bulbasaur)
-		end
-	end
 
 	describe '#receive_damage' do
 		it 'reduces player hitpoints by 10HP' do

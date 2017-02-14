@@ -23,7 +23,6 @@ class Game
 		@current_turn = opponent
 	end
 
-	private
 
 	def opponent
 		@players.detect { |player| player != @current_turn }

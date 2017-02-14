@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-feature 'game play' do
+feature 'Game play' do
 	scenario 'Player 1 gets attack confirmation on Player 2' do
 		sign_in_and_play
 		click_button 'Attack!'

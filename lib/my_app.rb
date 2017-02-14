@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require_relative 'models/player'
+require_relative 'models/game'
 
 class MyApp < Sinatra::Base
 

@@ -2,6 +2,7 @@
 
 require 'my_app'
 require 'models/player'
+require 'models/game'
 require 'features/web_helpers'
 
 ENV['RACK_ENV'] = 'test'

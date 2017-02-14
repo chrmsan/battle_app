@@ -1,6 +1,6 @@
 require 'sinatra/base'
-require_relative 'models/player'
-require_relative 'models/game'
+require './lib/models/player'
+require './lib/models/game'
 
 class MyApp < Sinatra::Base
 
@@ -11,8 +11,9 @@ class MyApp < Sinatra::Base
   end
 
   post '/names' do
-    $player1 = Player.new(params[:player_1])
-    $player2 = Player.new(params[:player_2])
+    player1 = Player.new(params[:player_1])
+    player2 = Player.new(params[:player_2])
+    $game = Game.new(player1, player2)
     redirect '/play'
   end
 

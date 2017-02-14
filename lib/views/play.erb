@@ -1,5 +1,7 @@
 <h1>Player 1: <%=@game.first_player.name%> (<%=@game.first_player.hitpoints%>HP) VS Player 2: <%=@game.second_player.name%> (<%=@game.second_player.hitpoints%>HP) </h1>
 
+<h2>It is <%=@game.current_turn.name%>'s turn</h2>
+
 <form action="/attack">
 	<input type="submit" value="Attack!">
 </form>

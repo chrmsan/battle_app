@@ -8,20 +8,20 @@ describe Game do
 
 	describe '#attack' do
 		it 'inflict damage to player who is being attacked' do
-			expect(:bulbasaur).to receive(:receive_damage) # this line of code says that object can be applied this method, given that instantiated object has this method
-			game.attack(:bulbasaur)
+			expect(bulbasaur).to receive(:receive_damage) # this line of code says that object can be applied this method, given that instantiated object has this method
+			game.attack(bulbasaur)
 		end
 	end
 
 	describe '#player_1' do
 		it 'retrieves the first player' do
-			expect(game.player_1).to eq pikachu
+			expect(game.first_player).to eq pikachu
 		end
 	end
 
 	describe '#player_2' do
 		it 'retrieves the second player' do
-			expect(game.player_2).to eq bulbasaur
+			expect(game.second_player).to eq bulbasaur
 		end
 	end
 

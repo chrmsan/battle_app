@@ -19,4 +19,14 @@ class Game
 		player.receive_damage
 	end
 
+	def switch_turns
+		@current_turn = opponent
+	end
+
+	private
+
+	def opponent
+		@players.detect { |player| player != @current_turn }
+	end
+
 end

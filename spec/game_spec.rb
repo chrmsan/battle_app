@@ -31,4 +31,11 @@ describe Game do
 		end
 	end
 
+	describe '#switch turns' do
+		it 'switches the turns' do
+			game.switch_turns
+			expect(game.current_turn).to eq bulbasaur
+		end
+	end
+
 end

@@ -25,4 +25,10 @@ describe Game do
 		end
 	end
 
+	describe '#current_turn' do
+		it 'starts at player_1' do
+			expect(game.current_turn).to eq pikachu
+		end
+	end
+
 end
